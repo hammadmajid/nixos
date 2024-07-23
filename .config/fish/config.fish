@@ -14,6 +14,7 @@ alias e="$EDITOR"
 alias cdd="cd ~/Dev"
 alias hx="helix"
 alias gg="lazygit"
+alias copy="xclip -selection clipboard" # Pipe it
 
 zoxide init --cmd cd fish | source
 starship init fish | source
