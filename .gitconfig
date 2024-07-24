@@ -1,0 +1,19 @@
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /opt/1Password/op-ssh-sign
+[commit]
+	gpgsign = true
+[user]
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPRtTqNrM5BMuNYBctad0rWPc6ExLGpIh+qyoHvJ+vm5
+	email = hammadmajid@proton.me
+	name = Hammad Majid
+[init]
+	defaultBranch = main
+[diff "lockb"]
+	textconv = bun
+	binary = true
