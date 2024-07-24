@@ -4,7 +4,7 @@ if status is-interactive
 end
 
 function fish_greeting
-    # echo "Greetings, it's $(set_color yellow; date; set_color normal) on Earth"
+    fortune | cowsay -f tux
 end
 
 set EDITOR micro
