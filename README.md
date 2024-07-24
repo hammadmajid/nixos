@@ -64,3 +64,5 @@ Prefer creating a system-wide config instead of dealing with permissions.
 - Also see the [wiki](https://github.com/jtroo/kanata/wiki/Avoid-using-sudo-on-Linux)
 
 ---
+
+If you are a malicious actor looking for leaked secrets, you might be interested to know that I've committed my public SSH key, which I use sign my commit message. Feel free to check it out.
