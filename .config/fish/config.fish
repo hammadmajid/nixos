@@ -7,12 +7,12 @@ function fish_greeting
     fortune | cowsay -f tux
 end
 
-set EDITOR micro
+set EDITOR helix
 
 alias ls="exa --icons --group-directories-first"
 alias e="$EDITOR"
 alias cdd="cd ~/Dev"
-alias hx="helix"
+alias hx="$EDITOR"
 alias gg="lazygit"
 alias copy="xclip -selection clipboard" # Pipe it
 
