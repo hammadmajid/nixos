@@ -53,3 +53,11 @@ if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+# Enable transient prompt for starship
+# See: https://starship.rs/advanced-config/#transientprompt-and-transientrightprompt-in-fish
+function starship_transient_prompt_func
+    starship module character
+end
+starship init fish | source
+enable_transience
