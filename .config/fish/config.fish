@@ -8,7 +8,6 @@ if status is-interactive
     # Run zellij on shell startup
     # It won't start zellij inside zellij when you create new tab
     # or pane
-    eval (zellij setup --generate-auto-start fish | string collect)
 end
 
 # Enviroment variables
