@@ -17,7 +17,7 @@
   },
   "ensure_final_newline_on_save": true,
   "format_on_save": true,
-  "theme": "Ayu Light",
+  "theme": "JetBrains New Dark",
   "vim_mode": false,
   "vim": {
     // "always": use system clipboard
@@ -29,7 +29,7 @@
     "use_smartcase_find": true
   },
   "relative_line_numbers": true,
-  "vertical_scroll_margin": 10,
+  "vertical_scroll_margin": 1,
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "terminal": {
