@@ -32,6 +32,10 @@ alias claer=sl
 #
 alias cdd="cd ~/Dev"
 alias hx="$EDITOR"
+# bun aliases
+alias bund="bun run dev"
+alias bunb="bun run build"
+alias bunp="bun run preview"
 
 # Shell integration 
 # ------------------
