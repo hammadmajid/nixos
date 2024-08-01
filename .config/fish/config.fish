@@ -24,8 +24,8 @@ alias ls="exa --icons --group-directories-first"
 alias gg="lazygit"
 #
 # Best used when piping into this alias
-# Package: xclip
-alias copy="xclip -selection clipboard"
+# Package: wl-clipboard
+alias copy="wl-copy"
 #
 # Package: sl
 alias claer=sl
