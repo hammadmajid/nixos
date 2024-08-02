@@ -12,7 +12,7 @@ if status is-interactive
 end
 
 # Enviroment variables
-set EDITOR helix # package: helix
+set -Ux EDITOR helix # package: helix
 
 # Aliases for commonly used commands
 # ---------------------------------- 
