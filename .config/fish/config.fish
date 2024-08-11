@@ -5,9 +5,6 @@ function fish_greeting
 end
 
 if status is-interactive
-    # Run zellij on shell startup
-    # It won't start zellij inside zellij when you create new tab
-    # or pane
 end
 
 # Enviroment variables
@@ -22,6 +19,9 @@ alias ls="exa --icons --group-directories-first"
 #
 # Package: lazygit
 alias gg="lazygit"
+#
+# Package: zellij
+alias zj="zellij"
 #
 # Best used when piping into this alias
 # Package: xclip
