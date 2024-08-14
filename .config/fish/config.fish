@@ -11,7 +11,7 @@ end
 set -Ux EDITOR helix # package: helix
 
 # Aliases for commonly used commands
-# ---------------------------------- 
+# ----------------------------------
 #
 # If you want to use the default ls run `\ls`
 # Package: exa
@@ -32,6 +32,10 @@ alias claer=sl
 #
 alias cdd="cd ~/Dev"
 alias hx="$EDITOR"
+#
+# Open zed in current dir
+# Package: zed
+alias zed="zeditor ."
 # bun aliases
 alias bnd="bun run dev"
 alias bnb="bun run build"
@@ -40,11 +44,11 @@ alias bnp="bun run preview"
 # history grep alias
 alias hg="history | grep"
 
-# Shell integration 
+# Shell integration
 # ------------------
 #
 # To use regular cd run it using `\cd`
-# Package: zoxide 
+# Package: zoxide
 zoxide init --cmd cd fish | source
 #
 # Package: starship
