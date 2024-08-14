@@ -7,6 +7,10 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "experimental.theme_overrides": {
+    // https://github.com/zed-industries/zed/issues/14955
+    "title_bar.inactive_background": "#2b2d30"
+  },
   "features": {
     "inline_completion_provider": "none"
   },
@@ -16,7 +20,7 @@
     "git_status": true
   },
   "ensure_final_newline_on_save": true,
-  "format_on_save": true,
+  "format_on_save": "off",
   "theme": "JetBrains New Dark",
   "vim_mode": false,
   "vim": {
@@ -28,6 +32,12 @@
     "use_multiline_find": true,
     "use_smartcase_find": true
   },
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": false
+    }
+  },
   "relative_line_numbers": true,
   "vertical_scroll_margin": 1,
   "ui_font_size": 16,
@@ -37,6 +47,7 @@
     "font_family": "JetBrainsMono Nerd Font",
     "shell": {
       "program": "fish"
-    }
+    },
+    "copy_on_select": true
   }
 }
