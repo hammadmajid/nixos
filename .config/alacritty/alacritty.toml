@@ -22,7 +22,7 @@
 # "~/.config/alacritty/keybindings.toml",
 # ]
 
-# import = ["~/.config/alacritty/atom_one_light.toml"]
+import = ["~/.config/alacritty/catppuccin-mocha.toml"]
 
 # live_config_reload = true | false
 # Live config reload (changes require restart)

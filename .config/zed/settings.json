@@ -7,10 +7,6 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "experimental.theme_overrides": {
-    // https://github.com/zed-industries/zed/issues/14955
-    "title_bar.inactive_background": "#2b2d30"
-  },
   "features": {
     "inline_completion_provider": "none"
   },
@@ -21,7 +17,7 @@
   },
   "ensure_final_newline_on_save": true,
   "format_on_save": "off",
-  "theme": "JetBrains New Dark",
+  "theme": "Catppuccin Mocha",
   "vim_mode": false,
   "vim": {
     // "always": use system clipboard
