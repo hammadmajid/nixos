@@ -1,7 +1,7 @@
 function fish_greeting
     # A tux greets you with random fortune
-    # Packages: fortune-mod cowsay
-    # fortune | cowsay -f tux
+    # Packages: pfetch
+    pfetch
 end
 
 if status is-interactive
