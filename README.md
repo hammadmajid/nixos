@@ -1,5 +1,8 @@
 # dotfiles
 
+![image](https://github.com/user-attachments/assets/b358666d-796d-496f-9268-9e1269393bd4)
+
+
 My dotfiles for Arch Linux (btw) with KDE DE. This document is written for my future self so it will be missing a lot things that you expect from 'normal' documentaion.
 
 ## Package list
