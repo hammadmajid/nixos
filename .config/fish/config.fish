@@ -1,7 +1,7 @@
 function fish_greeting
     # A tux greets you with random fortune
     # Packages: fortune-mod cowsay
-    fortune | cowsay -f tux
+    # fortune | cowsay -f tux
 end
 
 if status is-interactive
@@ -56,6 +56,9 @@ starship init fish | source
 #
 # Package: mise
 mise activate fish | source
+#
+# Package: atuin
+atuin init fish | source
 
 # pnpm
 set -gx PNPM_HOME "/home/hammad/.local/share/pnpm"
