@@ -1,6 +1,6 @@
 # dotfiles
 
-My dotfiles for Arch Linux (btw) on Gnome DE. This document is written for my future self so it will be missing a lot things that you expect from 'normal' documentaion.
+My dotfiles for Arch Linux (btw) with KDE DE. This document is written for my future self so it will be missing a lot things that you expect from 'normal' documentaion.
 
 ## Package list
 
@@ -21,12 +21,9 @@ zed
 git
 gh
 bottom
-fortune-mod
-cowsay
-sl
 ```
 
-## Ignore file
+## Ignored
 
 Ignore directories and files in `.git/info/exclude` file so I don't have to track my git ignores. Here is a little sample of it:
 
@@ -34,7 +31,7 @@ Ignore directories and files in `.git/info/exclude` file so I don't have to trac
 .cache
 .local
 .mozilla
-.shh # This one is quite important 
+.shh # Must ignore this
 Desktop
 Documents
 Downloads
@@ -49,12 +46,6 @@ Videos
 ## Additional config
 
 Some packages requrire additional configuration, here is how to set them up.
-
-### Helix
-
-Language server configured in `.config/helix/languages.toml` won't work unless these languages servers are installed.
-
-- `astro-ls` required for working with [Astro](astro.buid).
 
 ### Kanata
 
