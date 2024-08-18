@@ -23,6 +23,9 @@ alias gg="lazygit"
 # Package: zellij
 alias zj="zellij"
 #
+# Package: bottom
+alias btm="btm --dot_marker"
+#
 # Best used when piping into this alias
 # Package: xclip
 alias copy="xclip -selection clipboard"
