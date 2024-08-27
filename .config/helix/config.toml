@@ -1,7 +1,6 @@
 theme = "catppuccin_mocha"
 
 [editor]
-auto-save = true
 true-color = true
 color-modes = true
 line-number = "relative"

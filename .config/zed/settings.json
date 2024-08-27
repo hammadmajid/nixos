@@ -10,7 +10,8 @@
   "features": {
     "inline_completion_provider": "none"
   },
-  "autosave": "on_focus_change",
+  "tab_size": 2,
+  "autosave": "off",
   "confirm_quit": true,
   "tabs": {
     "git_status": true
