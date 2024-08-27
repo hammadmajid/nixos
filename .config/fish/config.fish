@@ -1,7 +1,4 @@
 function fish_greeting
-    # A tux greets you with random fortune
-    # Packages: pfetch
-    pfetch
 end
 
 if status is-interactive
@@ -35,6 +32,7 @@ alias claer=sl
 #
 alias cdd="cd ~/Dev"
 alias hx="$EDITOR"
+alias shx="sudo helix"
 #
 # Open zed in current dir
 # Package: zed
