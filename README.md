@@ -2,11 +2,11 @@
 
 ![image](https://github.com/user-attachments/assets/116486bb-1c9e-4b60-9a39-189b74b73a71)
 
-My dotfiles for Arch Linux (btw) with KDE DE. This document is written for my future self so it will be missing a lot things that you expect from 'normal' documentaion.
+My dotfiles for Arch Linux (btw) with Cosmic DE.
 
 ## Package list
 
-Here is not so comprehensive list of tools I use use and their arch/aur package names
+Here is not so comprehensive list of tools I use use and their arch/aur package names:
 
 ```
 helix
@@ -19,9 +19,9 @@ fish
 exa
 alacritty
 lazygit
-zed
 git
 gh
+atuin
 bottom
 ```
 
@@ -47,15 +47,23 @@ Videos
 
 ## Additional config
 
-Some packages requrire additional configuration, here is how to set them up.
+Some packages requrire additional configuration that can't be tracked.
 
 ### Kanata
+
+Map the `caps lock` key to `esc` when pressed and to `ctrl` when held. See `.config/kanata`.
 
 Prefer creating a system-wide config instead of dealing with permissions.
 
 - See discussion [#130](https://github.com/jtroo/kanata/discussions/130#discussioncomment-8518832)
 - Also see the [wiki](https://github.com/jtroo/kanata/wiki/Avoid-using-sudo-on-Linux)
 
----
+### Helix
 
-If you are a malicious actor looking for leaked secrets, you might be interested to know that I've committed my public SSH key, which I use sign my commit message. Feel free to check it out.
+Install LSPs with:
+
+```sh
+sudo npm i -g vscode-langservers-extracted svelte-language-server @tailwindcss/language-server typescript-svelte-plugin @astrojs/language-server typescript typescript-language-server
+```
+
+Checkout the [Helix Wiki](https://github.com/helix-editor/helix/wiki/Language-Server-Configurations) for more information.
