@@ -22,7 +22,7 @@
 # "~/.config/alacritty/keybindings.toml",
 # ]
 
-import = ["~/.config/alacritty/catppuccin-mocha.toml"]
+# import = ["~/.config/alacritty/catppuccin-mocha.toml"]
 
 # live_config_reload = true | false
 # Live config reload (changes require restart)
@@ -173,8 +173,8 @@ dynamic_padding = false
 startup_mode = "Windowed"
 title = "Alacritty"
 dynamic_title = true 
-# decorations_theme_variant = "None"
-# decorations = "None"
+decorations_theme_variant = "None"
+decorations = "None"
 # opacity = 0.7
 # blur = true 
 
