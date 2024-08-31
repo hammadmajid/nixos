@@ -1,7 +1,6 @@
 # dotfiles
 
-![image](https://github.com/user-attachments/assets/b358666d-796d-496f-9268-9e1269393bd4)
-
+![image](https://github.com/user-attachments/assets/116486bb-1c9e-4b60-9a39-189b74b73a71)
 
 My dotfiles for Arch Linux (btw) with KDE DE. This document is written for my future self so it will be missing a lot things that you expect from 'normal' documentaion.
 
