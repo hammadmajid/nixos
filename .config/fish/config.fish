@@ -9,7 +9,7 @@ set -Ux EDITOR helix
 # Aliases for commonly used commands
 # ------------------
 
-alias ls="exa --icons --group-directories-first"
+alias ls="exa --long --no-user --icons --group-directories-first"
 alias copy="xclip -selection clipboard"
 alias cdd="cd ~/Dev"
 alias shx="sudo hx"
