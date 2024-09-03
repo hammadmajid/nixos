@@ -16,6 +16,7 @@ alias shx="sudo hx"
 alias bnd="bun run dev"
 alias bnb="bun run build"
 alias bnp="bun run preview"
+alias lg="lazygit"
 
 # Shell integration
 # ------------------
