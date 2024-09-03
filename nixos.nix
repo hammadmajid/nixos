@@ -78,11 +78,44 @@
     description = "Hammad Majid";
     extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [
-      obsidian
-      rclone
-      sccache
+      # Apps
+      _1password-gui
+      _1password
       brave
+      cinny-desktop
+      cozy
+      foliate
+      gnome.gnome-sudoku
+      kitty
+      obsidian
+      protonvpn-gui
+      spot
+      # Tools
+      atuin
+      bear
+      bottom
+      bun
+      eza
+      gh
+      just
+      lazygit
+      rclone
+      starship
+      sccache
+      typst
+      wrangler_1
+      yazi
+      zellij
+      zoxide
+      # LSPs
       alejandra
+      nodePackages.svelte-language-server
+      nodePackages.typescript-language-server
+      rust-analyzer
+      tailwindcss-language-server
+      typst-lsp
+      vscode-langservers-extracted
+      yaml-language-server
     ];
     shell = pkgs.fish;
   };
@@ -96,28 +129,17 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    _1password-gui
-    _1password
-    git
-    gh
-    helix
-    zoxide
-    atuin
-    kitty
-    starship
-    lazygit
-    zellij
-    eza
-    fish
-    bottom
     clang
     clang-tools
     clang-manpages
-    bear
+    cmake
+    fish
+    git
+    gnumake
+    helix
+    nodejs_22
     python3
     rustup
-    nodejs_22
-    bun
   ];
 
   programs.fish.enable = true;
@@ -125,6 +147,12 @@
   programs._1password-gui = {
     enable = true;
     polkitPolicyOwners = ["hammad"];
+  };
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [];
+
+  environment.variables = {
+    EDITOR = "hx";
   };
 
   fonts.packages = with pkgs; [
