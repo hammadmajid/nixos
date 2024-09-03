@@ -7,7 +7,7 @@
 set -e
 
 # Edit your config
-$EDITOR configuration.nix
+$EDITOR nixos.nix
 
 # cd to your config dir
 pushd ~/dotfiles
