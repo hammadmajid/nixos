@@ -1,0 +1,2 @@
+[build]
+rustc-wrapper = "/etc/profiles/per-user/hammad/bin/sccache"
