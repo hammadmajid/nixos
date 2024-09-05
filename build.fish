@@ -9,7 +9,7 @@
 $EDITOR
 
 # cd to your config dir
-pushd ~/dotfiles
+pushd ~/nixos
 
 # Early return if no changes were detected (thanks @singiamtel!)
 if test (git diff --quiet '*.nix'; echo $status) -eq 0
