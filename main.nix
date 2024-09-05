@@ -84,11 +84,15 @@
       brave
       cozy
       foliate
+      fragments
       gnome.gnome-sudoku
       kitty
       obsidian
+      protonmail-desktop
       protonvpn-gui
       spot
+      zapzap
+
       # Tools
       atuin
       bat
@@ -99,9 +103,9 @@
       file
       fd
       gh
-      just
       kanata
       lazygit
+      mask
       rclone
       ripgrep
       starship
@@ -114,6 +118,7 @@
       zellij
       zip
       zoxide
+
       # LSPs
       alejandra
       marksman
