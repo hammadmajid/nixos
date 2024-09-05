@@ -114,6 +114,7 @@
       zoxide
       # LSPs
       alejandra
+      marksman
       nixd
       nodePackages.svelte-language-server
       nodePackages.typescript-language-server
