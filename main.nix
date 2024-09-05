@@ -91,6 +91,7 @@
       spot
       # Tools
       atuin
+      bat
       bear
       bottom
       bun
@@ -105,6 +106,7 @@
       ripgrep
       starship
       sccache
+      tree
       typst
       unzip
       wrangler_1
@@ -115,6 +117,7 @@
       # LSPs
       alejandra
       marksman
+      markdown-oxide
       nixd
       nodePackages.svelte-language-server
       nodePackages.typescript-language-server
