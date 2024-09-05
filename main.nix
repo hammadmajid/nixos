@@ -88,10 +88,9 @@
       gnome.gnome-sudoku
       kitty
       obsidian
-      protonmail-desktop
       protonvpn-gui
       spot
-      zapzap
+      whatsapp-for-linux
 
       # Tools
       atuin
