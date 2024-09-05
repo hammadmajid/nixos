@@ -99,6 +99,7 @@
       fd
       gh
       just
+      kanata
       lazygit
       rclone
       ripgrep
@@ -177,6 +178,19 @@
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
+
+  # Enable kanata service
+  services.kanata.enable = true;
+  services.kanata.keyboards = {
+    config = ''
+      (defsrc
+        caps)
+
+      (deflayermap (default-layer)
+      ;; tap caps lock as caps lock, hold caps lock as left control
+      caps (tap-hold 100 100 caps lctl))
+    '';
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
