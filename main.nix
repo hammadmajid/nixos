@@ -95,19 +95,25 @@
       bottom
       bun
       eza
+      file
+      fd
       gh
       just
       lazygit
       rclone
+      ripgrep
       starship
       sccache
       typst
+      unzip
       wrangler_1
       yazi
       zellij
+      zip
       zoxide
       # LSPs
       alejandra
+      nixd
       nodePackages.svelte-language-server
       nodePackages.typescript-language-server
       rust-analyzer
@@ -128,6 +134,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    binutils
     clang
     clang-tools
     clang-manpages
