@@ -82,7 +82,6 @@
       _1password-gui
       _1password
       brave
-      cinny-desktop
       cozy
       foliate
       gnome.gnome-sudoku
