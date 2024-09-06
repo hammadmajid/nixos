@@ -40,3 +40,24 @@ current=$(nixos-rebuild list-generations | grep current)
 
 git commit -am "$current"
 ~~~
+
+## cleanup
+
+To free up space and remove old generations and store paths, you can run the NixOS garbage collector. This will delete all generations and store paths older than the specified amount.
+
+> Run the NixOS garbage collector to clean up unused store paths
+
+**OPTIONS**
+* days
+  * flags: -d --days
+  * type: number
+  * desc: delete all generations older than the specified amount
+  * required
+
+~~~bash
+set -e 
+
+echo "Deleting generations older than ${days} days"
+
+sudo nix-collect-garbage --delete-older-than "${days}d"
+~~~
