@@ -85,12 +85,12 @@
       cozy
       foliate
       fragments
-      gnome.gnome-sudoku
+      gnome-solanum
       kitty
       obsidian
+      planify
       protonvpn-gui
       spot
-      whatsapp-for-linux
 
       # Tools
       atuin
