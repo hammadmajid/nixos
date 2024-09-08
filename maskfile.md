@@ -6,20 +6,10 @@ Thanks to @0atman for the original script. You can find his script in the [gist]
 
 ## setup
 
-This script will move the `configuration.nix` file to the `/etc/nixos/` directory. It will back up any existing configuration.nix file by renaming it with a timestamp and replace it with the new `configuration.nix` file.
-
-> Replace /etc/nixos/configuration.nix with ./configuration.nix
+> TODO
 
 ~~~bash
-#!/bin/bash
-
-timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
-
-# Backup the existing configuration file
-sudo mv "/etc/nixos/configuration.nix" "/etc/nixos/configuration-$timestamp.nix.bak" || { echo "Backup failed"; exit 1; }
-
-# Copy the new configuration file
-sudo cp "./configuration.nix" "/etc/nixos/configuration.nix" || { echo "Copy failed"; exit 1; }
+echo "TODO"
 ~~~
 
 ## edit
@@ -29,9 +19,9 @@ This will open your default `$EDITOR`, and once you close the editor, [alejandra
 > Open the default editor, and then format the code after it’s closed.
 
 ~~~bash
-$EDITOR main.nix
+$EDITOR 
 
-if git diff --quiet '*.nix'; then
+if git diff --quiet; then
     echo "No changes detected, exiting."
     exit 0
 fi
@@ -39,7 +29,7 @@ fi
 alejandra . &>/dev/null \
   || ( alejandra . ; echo "formatting failed!" && exit 1)
 
-git diff -U0 '*.nix'
+git diff -U0
 ~~~
 
 ## build
