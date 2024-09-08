@@ -51,7 +51,7 @@ This will rebuild NixOS and commit the changes you made with a message containin
 ~~~bash
 set -e # exit in case of error
 
-sudo nixos-rebuild switch
+sudo nixos-rebuild switch --flake .
 
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)
