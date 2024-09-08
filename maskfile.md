@@ -4,6 +4,24 @@ The code blocks inside this markdown file can be executed with [mask](https://gi
 
 Thanks to @0atman for the original script. You can find his script in the [gist](https://gist.github.com/0atman/1a5133b842f929ba4c1e195ee67599d5) he published. Also, I recommend checking out his [YouTube channel](https://www.youtube.com/@NoBoilerplate).
 
+## setup
+
+This script will move the `configuration.nix` file to the `/etc/nixos/` directory. It will back up any existing configuration.nix file by renaming it with a timestamp and replace it with the new `configuration.nix` file.
+
+> Replace /etc/nixos/configuration.nix with ./configuration.nix
+
+~~~bash
+#!/bin/bash
+
+timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
+
+# Backup the existing configuration file
+sudo mv "/etc/nixos/configuration.nix" "/etc/nixos/configuration-$timestamp.nix.bak" || { echo "Backup failed"; exit 1; }
+
+# Copy the new configuration file
+sudo cp "./configuration.nix" "/etc/nixos/configuration.nix" || { echo "Copy failed"; exit 1; }
+~~~
+
 ## edit
 
 This will open your default `$EDITOR`, and once you close the editor, [alejandra](https://github.com/kamadorueda/alejandra) will format the code (requires the `alejandra` package). If no changes are detected, the script will gracefully exit.
