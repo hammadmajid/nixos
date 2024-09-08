@@ -7,7 +7,6 @@
     ./hardware-configuration.nix
   ];
 
-
   # Define your hostname.
   networking.hostName = "nixos";
 
@@ -108,6 +107,7 @@
       gh
       kanata
       lazygit
+      ncdu
       nodePackages.wrangler
       mask
       podman
@@ -116,6 +116,7 @@
       ripgrep
       starship
       sccache
+      tldr
       tree
       typst
       unzip
@@ -234,5 +235,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
-
 }
