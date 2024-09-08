@@ -117,6 +117,7 @@
       tree
       typst
       unzip
+      xclip
       yazi
       zellij
       zip
