@@ -106,6 +106,7 @@
       gh
       kanata
       lazygit
+      nodePackages.wrangler
       mask
       podman
       podman-compose
@@ -116,7 +117,6 @@
       tree
       typst
       unzip
-      wrangler_1
       yazi
       zellij
       zip
