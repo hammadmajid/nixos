@@ -34,4 +34,5 @@ metadata := `nixos-rebuild list-generations | grep current`
 # commit all changes with current generation metadata
 commit:
   git diff -U0
-  git commit -am {{metadata}}
+  git add .
+  git commit -m "{{metadata}}"

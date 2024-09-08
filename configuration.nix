@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  unstable,
   ...
 }: {
   imports = [
@@ -80,66 +81,67 @@
     extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [
       # Apps
-      _1password-gui
-      _1password
-      brave
-      cozy
-      foliate
-      fragments
-      gnome-solanum
-      kitty
-      obsidian
-      planify
-      pods
-      protonvpn-gui
-      spot
+      pkgs._1password-gui
+      pkgs._1password
+      pkgs.brave
+      pkgs.cozy
+      pkgs.foliate
+      pkgs.fragments
+      pkgs.gnome-solanum
+      pkgs.kitty
+      pkgs.obsidian
+      pkgs.planify
+      pkgs.pods
+      pkgs.protonvpn-gui
+      pkgs.spot
+      unstable.zed-editor
 
       # Tools
-      atuin
-      bat
-      bear
-      bottom
-      bun
-      dive
-      eza
-      file
-      fd
-      gh
-      kanata
-      lazygit
-      ncdu
-      nodePackages.wrangler
-      mask
-      podman
-      podman-compose
-      rclone
-      ripgrep
-      starship
-      sccache
-      tldr
-      tree
-      typst
-      unzip
-      xclip
-      yazi
-      zellij
-      zip
-      zoxide
+      pkgs.atuin
+      pkgs.bat
+      pkgs.bear
+      pkgs.bottom
+      unstable.bun
+      pkgs.dive
+      pkgs.eza
+      pkgs.file
+      pkgs.fd
+      pkgs.gh
+      pkgs.just
+      pkgs.kanata
+      pkgs.lazygit
+      pkgs.ncdu
+      pkgs.nodePackages.wrangler
+      pkgs.podman
+      pkgs.podman-compose
+      pkgs.rclone
+      pkgs.ripgrep
+      pkgs.starship
+      pkgs.sccache
+      pkgs.tldr
+      pkgs.tree
+      pkgs.typst
+      pkgs.unzip
+      pkgs.xclip
+      pkgs.yazi
+      pkgs.zellij
+      pkgs.zip
+      pkgs.zoxide
 
       # LSPs
-      alejandra
-      docker-compose-language-service
-      dockerfile-language-server-nodejs
-      marksman
-      markdown-oxide
-      nixd
-      nodePackages.svelte-language-server
-      nodePackages.typescript-language-server
-      rust-analyzer
-      tailwindcss-language-server
-      typst-lsp
-      vscode-langservers-extracted
-      yaml-language-server
+      pkgs.alejandra
+      pkgs.docker-compose-language-service
+      pkgs.dockerfile-language-server-nodejs
+      pkgs.marksman
+      pkgs.markdown-oxide
+      pkgs.nixd
+      pkgs.nodePackages.svelte-language-server
+      pkgs.nodePackages.typescript-language-server
+      pkgs.rust-analyzer
+      pkgs.tailwindcss-language-server
+      pkgs.typst-lsp
+      pkgs.vscode-langservers-extracted
+      pkgs.yaml-language-server
     ];
     shell = pkgs.fish;
   };
