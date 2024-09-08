@@ -9,6 +9,9 @@ bufferline = "always"
 scrolloff = 1
 popup-border = "all"
 
+[editor.soft-wrap]
+enable = true
+
 [editor.statusline]
 left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator", "version-control"]
 
