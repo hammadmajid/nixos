@@ -8,11 +8,9 @@
   outputs = {
     self,
     unstable-nixpkgs,
-  }:
-  let
+  }: let
     unstable = unstable-nixpkgs.legacyPackages.x86_64-linux;
-  in
-   {
+  in {
     packages.x86_64-linux.default = unstable.hello;
   };
 }
