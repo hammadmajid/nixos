@@ -124,6 +124,8 @@
 
       # LSPs
       alejandra
+      docker-compose-language-service
+      dockerfile-language-server-nodejs
       marksman
       markdown-oxide
       nixd
