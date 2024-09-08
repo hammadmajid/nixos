@@ -1,10 +1,6 @@
 function fish_greeting
 end
 
-if status is-interactive
-    eval (zellij setup --generate-auto-start fish | string collect)
-end
-
 set -Ux EDITOR helix
 
 # Aliases for commonly used commands
@@ -14,15 +10,14 @@ alias ls="exa --long --no-user --icons --group-directories-first"
 alias copy="xclip -selection clipboard"
 alias cdd="cd ~/Dev"
 alias shx="sudo hx"
-alias bnd="bun run dev"
-alias bnb="bun run build"
-alias bnp="bun run preview"
 alias lg="lazygit"
 
 # Shell integration
 # ------------------
+if status is-interactive
+    eval (zellij setup --generate-auto-start fish | string collect)
+end
 
-# mise activate fish | source
 zoxide init --cmd cd fish | source
 atuin init fish --disable-up-arrow | source
 
