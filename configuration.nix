@@ -94,6 +94,7 @@
       pkgs.pods
       pkgs.protonvpn-gui
       pkgs.spot
+      unstable.vscodium
       unstable.zed-editor
 
       # Tools
