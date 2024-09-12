@@ -30,3 +30,6 @@ gc:
 format:
   alejandra .
 
+# Check if flake is valid
+check:
+  nix flake check --keep-going
