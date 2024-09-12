@@ -30,9 +30,3 @@ gc:
 format:
   alejandra .
 
-metadata := `nixos-rebuild list-generations | grep current`
-# commit all changes with current generation metadata
-commit:
-  git diff -U0
-  git add .
-  git commit -m "{{metadata}}"
