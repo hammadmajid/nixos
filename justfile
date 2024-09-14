@@ -11,12 +11,12 @@ debug:
 
 # update everything
 up:
-  nix flake update
+  sudo nix flake update
 
 # Update specific input
 # usage: make upp i=home-manager
 upp:
-  nix flake update $(i)
+  sudo nix flake update $(i)
 
 # remove all generations older than 7 days
 clean:
@@ -32,4 +32,4 @@ format:
 
 # Check if flake is valid
 check:
-  nix flake check --keep-going
+  sudo nix flake check --keep-going
