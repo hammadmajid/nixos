@@ -8,6 +8,11 @@
     ./hardware-configuration.nix
   ];
 
+  # Temporarily allow insecure packages
+  nixpkgs.config.permittedInsecurePackages = [
+    "openssl-1.1.1w"
+  ];
+
   # Define your hostname.
   networking.hostName = "nixos";
 
@@ -88,12 +93,15 @@
       pkgs.foliate
       pkgs.fragments
       pkgs.gnome-solanum
+      unstable.jetbrains.clion
+      unstable.jetbrains.webstorm
       pkgs.kitty
       pkgs.obsidian
       pkgs.planify
       pkgs.pods
       pkgs.protonvpn-gui
       pkgs.spot
+      pkgs.sublime4
       unstable.vscodium
       unstable.zed-editor
 
