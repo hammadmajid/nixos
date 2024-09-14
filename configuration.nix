@@ -93,8 +93,6 @@
       pkgs.foliate
       pkgs.fragments
       pkgs.gnome-solanum
-      unstable.jetbrains.clion
-      unstable.jetbrains.webstorm
       pkgs.kitty
       pkgs.obsidian
       pkgs.planify
@@ -103,7 +101,6 @@
       pkgs.spot
       pkgs.sublime4
       unstable.vscodium
-      unstable.zed-editor
 
       # Tools
       pkgs.atuin
