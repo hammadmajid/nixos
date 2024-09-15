@@ -21,9 +21,9 @@ up:
 upp:
   sudo nix flake update $(i)
 
-# remove all generations older than 7 days
-clean:
-  sudo nix profile wipe-history --profile /nix/var/nix/profiles/system  --older-than 7d
+# remove all generations older than {days}
+clean days:
+  sudo nix profile wipe-history --profile /nix/var/nix/profiles/system  --older-than {{days}}d
 
 # garbage collect all unused nix store entries
 gc:
