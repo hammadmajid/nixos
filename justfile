@@ -36,3 +36,10 @@ format:
 # Check if flake is valid
 check:
   sudo nix flake check --keep-going
+
+gen := `nixos-rebuild list-generations | grep current`
+# commit .nix files with current generation meta data
+commit:
+  git add flake.* "*.nix"
+  git commit -m "{{ gen }}"
+
