@@ -1,6 +1,9 @@
 # just is a command runner, Justfile is very similar to Makefile, but simpler.
 # see: https://nixos-and-flakes.thiscute.world/best-practices/simplify-nixos-related-commands
 
+default:
+  @just --choose
+
 # rebuild the system
 build:
   sudo nixos-rebuild switch --flake .
