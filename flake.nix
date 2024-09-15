@@ -7,6 +7,12 @@
 
     # NixOs offical unstable branch, used for certain packages
     unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    # home-manager, used for managing user configuration
+    home-manager = {
+      url = "github:nix-community/home-manager/release-24.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs @ {
