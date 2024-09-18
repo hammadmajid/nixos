@@ -120,8 +120,10 @@
       pkgs.nodePackages.wrangler
       pkgs.podman
       pkgs.podman-compose
+      pkgs.python312Packages.pip
       pkgs.rclone
       pkgs.ripgrep
+      pkgs.rye
       pkgs.starship
       pkgs.sccache
       pkgs.tldr
