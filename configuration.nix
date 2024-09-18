@@ -120,7 +120,9 @@
       pkgs.nodePackages.wrangler
       pkgs.podman
       pkgs.podman-compose
+      pkgs.python312Packages.django_5
       pkgs.python312Packages.pip
+      pkgs.python312Packages.python-lsp-server
       pkgs.rclone
       pkgs.ripgrep
       pkgs.rye
