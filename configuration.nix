@@ -101,6 +101,7 @@
       pkgs.spot
       pkgs.sublime4
       unstable.vscodium
+      unstable.warp-terminal
 
       # Tools
       pkgs.atuin
@@ -117,6 +118,7 @@
       pkgs.kanata
       pkgs.lazygit
       pkgs.ncdu
+      pkgs.nasm
       pkgs.nodePackages.wrangler
       pkgs.podman
       pkgs.podman-compose
