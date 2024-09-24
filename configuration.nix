@@ -94,14 +94,13 @@
       pkgs.fragments
       pkgs.gnome-solanum
       pkgs.kitty
+      pkgs.libreoffice-still
       pkgs.obsidian
-      pkgs.planify
       pkgs.pods
       pkgs.protonvpn-gui
       pkgs.spot
       pkgs.sublime4
       unstable.vscodium
-      unstable.warp-terminal
 
       # Tools
       pkgs.atuin
@@ -109,7 +108,6 @@
       pkgs.bear
       pkgs.bottom
       unstable.bun
-      pkgs.dive
       pkgs.eza
       pkgs.file
       pkgs.fd
@@ -211,6 +209,19 @@
   fonts.packages = with pkgs; [
     (nerdfonts.override {fonts = ["JetBrainsMono"];})
   ];
+
+  # Enable NextDNS
+    services.resolved = {
+    enable = true;
+    extraConfig = ''
+      [Resolve]
+      DNS=45.90.28.0#7cff39.dns.nextdns.io
+      DNS=2a07:a8c0::#7cff39.dns.nextdns.io
+      DNS=45.90.30.0#7cff39.dns.nextdns.io
+      DNS=2a07:a8c1::#7cff39.dns.nextdns.io
+      DNSOverTLS=yes
+    '';
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
