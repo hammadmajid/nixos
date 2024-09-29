@@ -95,6 +95,7 @@
       # Apps
       pkgs._1password-gui
       pkgs._1password
+      pkgs.anydesk
       pkgs.brave
       pkgs.cozy
       pkgs.foliate
@@ -139,6 +140,7 @@
       pkgs.tree
       pkgs.typst
       pkgs.unzip
+      pkgs.valgrind
       pkgs.xclip
       pkgs.yazi
       pkgs.zellij
