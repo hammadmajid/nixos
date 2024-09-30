@@ -101,6 +101,7 @@
       pkgs.foliate
       pkgs.fragments
       pkgs.gnome-solanum
+      pkgs.jetbrains.phpstorm
       pkgs.kitty
       pkgs.libreoffice-still
       pkgs.obsidian
@@ -123,9 +124,12 @@
       pkgs.just
       pkgs.kanata
       pkgs.lazygit
+      pkgs.mysql84
       pkgs.ncdu
       pkgs.nasm
       pkgs.nodePackages.wrangler
+      pkgs.php
+      pkgs.php83Packages.composer
       pkgs.podman
       pkgs.podman-compose
       pkgs.python312Packages.django_5
@@ -139,8 +143,10 @@
       pkgs.tldr
       pkgs.tree
       pkgs.typst
-      pkgs.unzip
       pkgs.valgrind
+      pkgs.unzip
+      pkgs.wordpress
+      pkgs.wp-cli
       pkgs.xclip
       pkgs.yazi
       pkgs.zellij
