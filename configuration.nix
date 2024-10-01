@@ -124,7 +124,6 @@
       pkgs.just
       pkgs.kanata
       pkgs.lazygit
-      pkgs.mysql84
       pkgs.ncdu
       pkgs.nasm
       pkgs.nodePackages.wrangler
@@ -170,6 +169,14 @@
     ];
     shell = pkgs.fish;
   };
+
+  # Enable and setup mysql
+  services.mysql = {
+      enable = true;
+      # dataDir = "/var/lib/mysql";
+      package = pkgs.mariadb;
+    };
+
 
   # Enable common container config files in /etc/containers
   virtualisation.containers.enable = true;
