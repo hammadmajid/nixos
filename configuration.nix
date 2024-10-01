@@ -104,6 +104,7 @@
       pkgs.jetbrains.phpstorm
       pkgs.kitty
       pkgs.libreoffice-still
+      pkgs.mediawriter
       pkgs.obsidian
       pkgs.pods
       pkgs.protonvpn-gui
@@ -170,13 +171,11 @@
     shell = pkgs.fish;
   };
 
-  # Enable and setup mysql
-  services.mysql = {
-      enable = true;
-      # dataDir = "/var/lib/mysql";
-      package = pkgs.mariadb;
-    };
-
+  # services.mysql = {
+  #     enable = true;
+  #     # dataDir = "/var/lib/mysql";
+  #     package = pkgs.mariadb;
+  # };
 
   # Enable common container config files in /etc/containers
   virtualisation.containers.enable = true;
