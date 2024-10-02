@@ -130,6 +130,7 @@
       pkgs.nodePackages.wrangler
       pkgs.php
       pkgs.php83Packages.composer
+      pkgs.php83Packages.php-codesniffer
       pkgs.podman
       pkgs.podman-compose
       pkgs.python312Packages.django_5
