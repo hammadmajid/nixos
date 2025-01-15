@@ -14,7 +14,7 @@ auto-format = true
 [[language]]
 name = "tsx"
 auto-format = true
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome", "snippets-ls" ]
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
 
 [[language]]
 name = "jsx"
@@ -24,7 +24,3 @@ language-servers = [ { name = "typescript-language-server", except-features = [ 
 [[language]]
 name = "json"
 language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
-
-[language-server.snippets-ls]
-command = "snippets-ls"
-args = ["-config", "/home/bine/.config/helix/snippets.json"]
