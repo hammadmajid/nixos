@@ -21,6 +21,9 @@ alias btm="btm --dot_marker"
 # Best used when piping into this alias
 # Package: xclip
 alias copy="xclip -selection clipboard"
+#
+# Package: yazi
+alias yy=yazi
 
 #
 alias cdd="cd ~/Code"
