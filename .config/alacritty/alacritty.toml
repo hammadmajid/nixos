@@ -59,7 +59,7 @@ args = ["-l"]
 # "~/.config/alacritty/keybindings.toml",
 # ]
 
-import = ["~/.config/alacritty/catppuccin-mocha.toml"]
+# import = ["~/.config/alacritty/catppuccin-mocha.toml"]
 
 
 # ENV
