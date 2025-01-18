@@ -63,3 +63,6 @@ function starship_transient_prompt_func
 end
 starship init fish | source
 enable_transience
+
+# Enable 1Password CLI plugins
+source /home/bine/.config/op/plugins.sh
