@@ -1,0 +1,39 @@
+{
+	"Next Page": {
+		"prefix": "page",
+		"body": [
+			"import { Metadata } from \"next\"\n",
+			"export const metadata: Metadata = {",
+			"\ttitle: \"$1\",",
+			"\tdescription: \"$2\"",
+			"};\n",
+			"export default function Page() {",
+			"\treturn <>$0</>",
+			"}"
+		],
+		"description": "Next.js page server component with metadata export",
+	},
+	"Client Component": {
+		"prefix": "client",
+		"body": [
+			"\"use client\"\n",
+			"export function ${1:Component}() {",
+			"\treturn <>$0</>",
+			"}"
+		],
+		"description": "Client-side React component",
+	},
+	"Client Component with Props": {
+		"prefix": "prop",
+		"body": [
+			"\"use client\"\n",
+			"interface ${1:Component}Props{",
+			"\t$2",
+			"}\n",
+			"export function ${1:Component}({$3} : ${1:Component}Props) {",
+			"\treturn <>$0</>",
+			"}"
+		],
+		"description": "Client-side React component with TypeScript props interface",
+	}
+}

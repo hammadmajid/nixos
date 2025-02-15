@@ -1,1 +1,11 @@
-
+{
+  "Next Server Action": {
+    "prefix": "server",
+    "body": [
+      "export async function ${1:Foo}(${2:param}: ${3:type}): Promise<${4:void}> {",
+      "\t$0",
+      "\treturn;",
+      "}"
+    ]
+  }
+}
