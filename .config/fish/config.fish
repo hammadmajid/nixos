@@ -24,6 +24,13 @@ alias copy="xclip -selection clipboard"
 #
 # Package: yazi
 alias yy=yazi
+#
+# Package: zed
+alias zz=zed
+
+# exit
+alias :q=exit
+alias :wq=exit
 
 #
 alias cdd="cd ~/Code"
